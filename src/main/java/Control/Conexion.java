@@ -22,9 +22,9 @@ public class Conexion {
         /**url = "jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_127d3223671f671?serverTimezone=UTC";
         userName = "b42abb741c1d5b";
         password = "581a99e2";*/
-        url = "jdbc:mysql://localhost:3306/ordereat?serverTimezone=UTC";
-        userName = "root";
-        password = "Hongui.121";
+        url = "";
+        userName = "";
+        password = "";
         
         Connection con = null;
         

@@ -1,0 +1,227 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/05/2022, 04:02:37 PM
+    Author     : MARIA DEL REFUGIO
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+:root{
+    /*===== Colores =====*/
+    --first-color: #FFDE59;
+    --first-color-dark:hsl(355, 4%, 15%);
+    --first-color-light: #A49EAC;
+    --first-color-lighten: #F2F2F2;
+  
+    /*===== Font and typography =====*/
+    --body-font: 'Quicksand', sans-serif;
+    --h1-font-size: 1.8rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+  }
+
+@media screen and (min-width: 768px){
+    :root{
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+    }
+  }
+  
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  color: hsl(355, 4%, 15%);
+  overflow: hidden;
+}
+h1{
+  margin: 0;
+  color: hsl(355, 4%, 15%);
+  font-size: large;
+}
+
+a{
+  text-decoration: none;
+}
+/*===== FORM =====*/
+.l-form{
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+/*=== Form ===*/
+
+.form__content{
+  width: 290px;
+}
+.form__img{
+  display: none;
+}
+.form__title{
+  font-size: var(--big-font-size);
+  font-weight: bold;
+  font-size: 32px;
+  color: var(--first-color-dark);
+  margin-bottom: 2rem;
+}
+.form__div{
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin-bottom: 1.5rem;
+  padding: .25rem 0;
+  border-bottom: 1px solid var(--text-color);
+}
+
+/*=== Div focus ===*/
+.form__div.focus{
+  border-bottom: 1px solid var(--first-color-dark);
+}
+
+.form__div-one{
+  margin-bottom: 2rem;
+}
+
+.form__icon{
+  font-size: 1.5rem;
+  color: var(--text-color);
+  transition: .3s;
+}
+/*=== Icon focus ===*/
+.form__div.focus .form__icon{
+  color: var(--first-color-dark);
+}
+
+.form__label{
+  display: block;
+  position: absolute;
+  left: .75rem;
+  top: .25rem;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  transition: .3s;
+}
+/*=== Label focus ===*/
+.form__div.focus .form__label{
+  top: -1.5rem;
+  font-size: .875rem;
+  color: var(--first-color-dark);
+}
+
+.form__div-input{
+  position: relative;
+}
+
+.form__div-last{
+  position: relative;
+  margin-bottom: 0px;
+}
+
+
+.form__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: .5rem .75rem;
+  font-size: 1.2rem;
+  color: var(--first-color-dark);
+  transition: .3s;
+}
+
+
+
+
+.form__forgot{
+  display:inline-block ;
+  text-align: right;
+  margin-bottom: 2rem;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  font-weight: 500;
+  transition: .5;
+}
+.form__forgot:hover{
+  color: var(--first-color-dark);
+  transition: .5s;
+}
+
+.check{ 
+  align-items: right;
+}
+
+.form__button{
+  padding: 1rem;
+  font-size: var(--normal-font-size);
+  outline: none;
+  border: none;
+  margin-bottom: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .3s;
+  display: block;
+  padding: 1rem;
+  transition: .3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form__button:hover{
+  box-shadow: 0px 15px 36px rgba(0,0,0,.15);
+  color: #fff;
+}
+
+.regreso{
+  font-size: 30px;
+  color: black;
+}
+
+.form__reg{
+  display: block;
+  text-align: right;
+  margin-bottom: 2rem;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  font-weight: 500;
+  transition: .5;
+}
+.form__reg:hover{
+  color: var(--first-color-dark);
+  transition: .5s;
+}
+
+.atras{
+    display: inline-flex;
+}
+
+/*===== MEDIA QUERIS =====*/
+@media screen and (min-width: 968px){
+  .form{
+      grid-template-columns: 1.5fr 1fr;
+      padding: 0 2rem;
+  }
+  .form__content{
+      width: 320px;
+  }
+  .form__img{
+      display: block;
+      width: 700px;
+      justify-self: center;
+  }
+}

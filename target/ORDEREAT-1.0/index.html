@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="IMG/isotipo.png"> 
+        <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+        <link rel="stylesheet" href="CSS/ordereat-inicio.css">
+
+        <title>OrderEat</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="IMG/isotipo.png" alt="" class="nav__logo-img"> 
+                    OrderEat
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#celebrate" class="nav__link">Usuarios</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#gift" class="nav__link">Modulos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="login.jsp" class="nav__link">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+
+                    <img src="assets/img/nav-light.png" alt="" class="nav__img">
+                </div>
+               
+
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="IMG/people-at-the-coffee-shop.jpg" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">Gestiona tus pedidos <br> online!</h1>
+                        <p class="home__description">
+                            OrderEat es tu mejor opción para restaurantes con único local y dark kithen
+                            que ofezcan servicio de delivery y para llevar.
+                        </p>
+                        <a href="registrar.jsp" class="button">Crear Cuenta</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== GIVING ====================-->
+            <section class="giving section container">
+                <h2 class="section__title">
+                    Beneficios de usar <br> OrderEat
+                </h2>
+
+                <div class="giving__container grid">
+                    <div class="giving__content">
+                        <i class='bx bx-dish giving__img' ></i>
+                        <h3 class="giving__title">Gestión de órdenes</h3>
+                        <p class="giving__description">Mayor precisión en las órdenes con flujo de sencillo de creación.</p>
+                    </div>
+
+                    <div class="giving__content">
+                        <i class='bx bx-package giving__img' ></i>
+                        <h3 class="giving__title">Menú y Gestión de Inventario</h3>
+                        <p class="giving__description">Actualiza tu menu y mejor tu seguimiento de inventario.</p>
+                    </div>
+
+                    <div class="giving__content">
+                        <i class='bx bx-bar-chart-alt-2 giving__img' ></i>
+                        <h3 class="giving__title">Estadísticas</h3>
+                        <p class="giving__description">Ofrecemos reportes necesarios para hacer funcionar tu negocio.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CELEBRATE ====================-->
+            <section class="celebrate section container" id="celebrate">
+                <div class="celebrate__container grid">
+                    <div class="celebrate__data">
+                        <h2 class="section__title celebrate__title">
+                            Nuestros principales <br> Usuarios
+                        </h2>
+                        <p class="celebrate__description">
+                            OrderEat va orientado principalmente a negocios de comida pequeños que cuenten con una sola sucursal, o bien 
+                            que poseen de 50-100 clientes por mes.
+                            Ya seas el dueño de una pequeña cafetería o de un restaurante dark kitchen, OrderEat simplifica 
+                            tu gestión de órdenes en línea, para que te centres en tu trabajo y tus clientes.
+                        </p>
+                        <a href="login.jsp" class="button">Empezar ya!</a>
+                    </div>
+
+                    <img src="IMG/cajera-restaurante.jpg" alt="cajera-restaurante" class="celebrate__img">
+                </div>
+            </section>
+
+            <!--==================== GIFT ====================-->
+            <section class="gift section container" id="gift">
+                <h2 class="section__title">Módulos que encontrarás en OrderEat</h2>
+
+                <div class="gift__container grid">
+                    <article class="gift__card">
+                        <img src="assets/img/gift1.png" alt="" class="gift__img">
+                        <i class='bx bx-receipt gift__icon'></i>
+                        
+                        <h3 class="gift__price">Ordenes</h3>
+                        <span class="gift__title">Agrega tus ordenes </span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift2.png" alt="" class="gift__img">
+                        <i class='bx bx-dish gift__icon'></i>
+                        
+                        <h3 class="gift__price">Menu</h3>
+                        <span class="gift__title">Añade tus platillos</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift3.png" alt="" class="gift__img">
+                        <i class='bx bx-user gift__icon'></i>
+                        
+                        <h3 class="gift__price">Clientes</h3>
+                        <span class="gift__title">Añade los frecuentes</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift4.png" alt="" class="gift__img">
+                        <i class='bx bx-pie-chart-alt gift__icon'></i>
+                        
+                        <h3 class="gift__price">Historial</h3>
+                        <span class="gift__title">Visualiza ordenes de tus clientes</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift5.png" alt="" class="gift__img">
+                        <i class='bx bxs-package gift__icon'></i>
+                        
+                        <h3 class="gift__price">Inventario</h3>
+                        <span class="gift__title">Controla entradas y salidas</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift5.png" alt="" class="gift__img">
+                        <i class='bx bx-bar-chart-alt-2 gift__icon'></i>
+                        
+                        <h3 class="gift__price">Reportes</h3>
+                        <span class="gift__title">Visualiza estadísticas funcionales</span>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="new">
+                <h2 class="section__title">Sobre Nosotros</h2>
+                                <div class="message__container grid">
+                                    <form action="" class="message__form">
+                                        <h2 class="message__title">Equipo <br> DonkeyBit</h2>
+                                        <p>Somos estudiantes del CECyT 9 y nuestro objetivo con</p>
+                                        <p>OrderEat es reducir los tiempos a negocios pequeños</p>
+                                        <p>de comida y que aprovechen la tecnología a su favor.</p>
+                                    </form>
+
+                                    <img src="IMG/isotipo.png" alt="" class="message__img">
+                                </div>
+            </section>
+
+            <!--==================== MESSAGE ====================-->
+            
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img src="IMG/isotipo.png" alt="" class="footer__logo-img"> 
+                        OrderEat
+                    </a>
+
+                    <p class="footer__description">
+                        OrderEat es tu mejor opción<br>  para restaurantes con único local y <br> dark kithen
+                        que ofezcan servicio de<br>  delivery y para llevar. 
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Información</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#celebrate" class="footer__link">Usuarios</a>
+                        </li>
+                        <li>
+                            <a href="#gift" class="footer__link">Modulos</a>
+                        </li>
+                        <li>
+                            <a href="#new" class="footer__link">Sobre Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Desarrolladores</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a class="footer__link">Arzate Bello Sergio Sachiel</a>
+                        </li>
+                        <li>
+                                <a class="footer__link">Basilio Polo Mario Oswaldo</a>
+                        </li>
+                        <li>
+                            <a class="footer__link">Horteales Morales Antony Rafael</a>
+                        </li>
+                        <li>
+                            <a class="footer__link">Martínez Gamboa Natalia</a>
+                        </li>
+                        <li>
+                            <a class="footer__link">Rivas Gutiérrez Leonardo</a>
+                        </li>
+                        <li>
+                            <a class="footer__link">Toral Hernández Leonardo Javier</a>
+                        </li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="footer__title">Soporte Técnico</h3>
+                    <p class="footer__description">
+                        Cuéntanos cuál es tu problema<br> y en breve te apoyaremos.
+                    </p>
+                    <br>
+
+                    <div>
+                        <form method="post" action="Soporte" class="form">
+                            <div class="form__div">
+                                <input name="nombre" id="nombre" type="text" class="form__input" placeholder=" " required>
+                                <label for="" class="form__label">Nombre</label>
+                            </div>
+
+                            <div class="form__div">
+                                <input type="email" name="email" id="email" class="form__input" placeholder=" " required>
+                                <label for="" class="form__label">Correo Gmail</label>
+                            </div>
+            
+                            <div class="form__div">
+                                <input type="text" name="problema" id="problema" class="form__input" placeholder=" " required>
+                                <label for="" class="form__label">Describe tu problema</label>
+                            </div>
+            
+                            <input type="submit" class="form__button" value="Enviar Ticket">
+                        </form>
+                    </div>
+                </div>
+
+        
+            </div>
+
+            <span class="footer__copy">&#169; DonkeyBit Todos los derechos reservados.</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="JS/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="JS/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="JS/inicio.js"></script>
+    </body>
+</html> 
